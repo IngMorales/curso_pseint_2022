@@ -1,24 +1,34 @@
 Proceso ejercicio32
-	// Escribir un algoritmo que me muestre la suma del 1 al 9
-	Definir i, j, suma, multiplicar Como Entero;
+	// Escribir un algoritmo que me almacene los siguientes datos: 1, 2, 56, 45, 12, 85, 66 e imprimirlos
+	Definir i, j, x, w, n, z Como Entero;
+	Definir num, arreglo, matriz, vector Como Real;
+	Dimension arreglo[7]; 
+	Dimension matriz[5, 5];
 	
-	Para i = 0 Hasta 10 Con Paso 1 Hacer
-		Mostrar "======== LA SUMA DEL NÚMERO: ",i," ========";
-		Para j = 0 Hasta 10 Con Paso 1 Hacer
-			suma = i+j;
-			Mostrar i," + ", j, " = ", suma;
-		Fin Para
+	//Llenar arreglo 1 Dimension 
+	Para i = 0 Hasta 7-1 Con Paso 1 Hacer
+		Mostrar "Digite número en posición [", (i+1), "]";
+		Leer num;
+		arreglo[i] = num;
 	Fin Para
 	
-	Mostrar "TABLAS DE MULTIPLICAR";
-	
-	i = 0;
-	j = 0;
-	Para i = 1 Hasta 9 Con Paso 1 Hacer
-		Mostrar "======== LA MULTIPLICACION DEL NÚMERO: ",i," ========";
-		Para j = 1 Hasta 9 Con Paso 1 Hacer
-			multiplicar = i*j;
-			Mostrar i," * ", j, " = ", multiplicar;
-		Fin Para
+	Para j = 0 Hasta 7-1 Con Paso 1 Hacer
+		Mostrar "El numero en la posicion [", (j+1), "], es: ",arreglo[j];
 	Fin Para
+	
+	Mostrar "Digite tamaño del vector";
+	Leer n;
+	Dimension vector[n];
+	
+	num = 0;
+	Para z = 0 Hasta n-1 Con Paso 1 Hacer
+		Mostrar "Digite número en posición [", (z+1), "]";
+		Leer num;
+		vector[z] = num;
+	Fin Para
+	
+	Para x = 0 Hasta n-1 Con Paso 1 Hacer
+		Mostrar "El numero en la posicion [", (x+1), "], es: ",vector[x];
+	Fin Para
+	
 FinProceso

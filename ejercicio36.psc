@@ -1,4 +1,4 @@
-Proceso ejercicio35
+Proceso ejercicio36
 	// Escribir un programa que me genero 50 números al azar e imprimir
 	Definir i, num, vector, n Como Entero;
 	
